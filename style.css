@@ -1,10 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", serif;
 }
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+
+body {
+  background-color: #011f3f;
+  color: white;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+  color: #e8be4c;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  width: 15rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+@media (min-width: 500px) {
+  label {
+    flex-direction: row;
+  }
+
+  input {
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+.titulo {
+  font-size: 1.7rem;
 }
