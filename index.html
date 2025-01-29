@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso 903</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -12,29 +13,29 @@
         <h1>Grupo de apollo escolar</h1>
         <h1>Curso 903</h1>
       </section>
-      <form action="">
+      <form action="" id="form_1">
         <h2>Información de contacto</h2>
         <div class="referido">
           <h3>Acudiente</h3>
           <div class="inputs">
-            <label for="nombre">
+            <label for="nombre_acudiente">
               <span>Nombre completo</span>
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+              <input type="text" name="nombre_acudiente" id="nombre_acudiente" placeholder="Nombre" required />
             </label>
-            <label for="telefono">
+            <label for="telefono_acudiente">
               <span>WhatsApp</span>
-              <input type="number" name="telefono" id="telefono" placeholder="3003370156" required />
+              <input type="number" name="telefono_acudiente" id="telefono_acudiente" placeholder="3003370156" required />
             </label>
           </div>
           <h3>Estudiante</h3>
           <div class="inputs">
-            <label for="nombre">
+            <label for="nombre_estudiante">
               <span>Nombre completo</span>
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+              <input type="text" name="nombre_estudiante" id="nombre_estudiante" placeholder="Nombre" required />
             </label>
           </div>
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit" id="btn_enviar">Enviar</button>
       </form>
     </main>
   </body>
