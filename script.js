@@ -12,4 +12,7 @@ document.getElementById('Form_1').addEventListener('submit', function (event) {
     jsonData[key] = value;
   });
   console.log(JSON.stringify(jsonData));
+  [...document.getElementsByTagName('input')].forEach((element) => {
+    element.value = '';
+  });
 });
