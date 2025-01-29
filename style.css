@@ -7,13 +7,20 @@
   font-family: "Roboto", serif;
 }
 
+:root {
+  --color-gris-texto: #cecfd3;
+  --color-gris-oscuro-texto: #66666d;
+  --color-naranja-claro-texto: #e8be4c;
+  --color-azul-oscuro-background: #011f3f;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
 body {
-  background-color: #011f3f;
+  background-color: var(--color-azul-oscuro-background);
   color: white;
 }
 
@@ -22,7 +29,7 @@ html {
 }
 
 h1 {
-  color: #e8be4c;
+  color: var(--color-naranja-claro-texto);
   font-size: 2rem;
   text-align: center;
 }
@@ -48,6 +55,7 @@ label {
 }
 
 input {
+  background-color: var(--color-gris-texto);
   font-size: 1rem;
   margin-top: 0.5rem;
   padding-left: 0.5rem;
@@ -58,6 +66,8 @@ input {
 }
 
 button {
+  background-color: var(--color-gris-texto);
+  color: var(--color-gris-oscuro-texto);
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 2.5rem;
@@ -68,9 +78,22 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: white;
+}
+
+.titulo {
+  font-size: 1.7rem;
+}
+
+::placeholder {
+  color: var(--color-gris-oscuro-texto);
+}
+
 @media (min-width: 500px) {
   label {
     flex-direction: row;
+    align-items: center;
   }
 
   input {
@@ -82,12 +105,4 @@ button {
   html {
     font-size: 24px;
   }
-}
-
-button:hover {
-  background-color: #a0a0aa;
-}
-
-.titulo {
-  font-size: 1.7rem;
 }
