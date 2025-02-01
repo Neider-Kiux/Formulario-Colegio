@@ -20,12 +20,26 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--color-azul-oscuro-background);
   color: white;
 }
 
 html {
   font-size: 16px;
+}
+
+main {
+  padding: 1rem;
+  width: 90vw;
+  height: 99vh;
+  border: solid white 0.0625rem;
+  border-radius: 1rem;
 }
 
 h1 {
@@ -37,19 +51,19 @@ h1 {
 h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 1rem;
+  text-align: center;
 }
 
 h3 {
+  color: #b66645;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 2rem;
+  width: 100%;
 }
 
 label {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -57,20 +71,19 @@ label {
 input {
   background-color: var(--color-gris-texto);
   font-size: 1rem;
-  margin-top: 0.5rem;
   padding-left: 0.5rem;
   height: 2rem;
-  width: 15rem;
+  width: 10rem;
   border-radius: 0.25rem;
   border: none;
 }
 
 button {
-  background-color: var(--color-gris-texto);
-  color: var(--color-gris-oscuro-texto);
+  background-color: var(--color-naranja-claro-texto);
+  color: black;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 2.5rem;
+  margin-left: auto;
   font-size: 1.5rem;
   width: 8rem;
   height: 2rem;
@@ -78,8 +91,25 @@ button {
   border: none;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 button:hover {
   background-color: white;
+}
+
+.nombre_acudiente,
+.nombre_estudiante {
+  border-top: solid white 0.0625rem;
+  width: 100%;
+}
+
+.referido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titulo {
@@ -92,17 +122,25 @@ button:hover {
 
 @media (min-width: 500px) {
   label {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    flex-direction: row;
   }
 
   input {
-    margin-left: 1rem;
+    margin-left: auto;
+    width: 18rem;
+  }
+
+  main {
+    width: 70vw;
+    height: 80vh;
   }
 }
 
 @media (min-width: 800px) {
-  html {
-    font-size: 24px;
+  main {
+    width: 40vw;
+    height: 75vh;
   }
 }
