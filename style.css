@@ -24,8 +24,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  width: 100vw;
-  height: 100vh;
   background-color: var(--color-azul-oscuro-background);
   color: white;
 }
